@@ -23,5 +23,9 @@ Collection
 	c.remove('key2');
 	console.log(c.length);
 	console.log(c.get('key3'));
+	
+	c.each(function(key, value, index, length){
+		console.log(key, value, index, length);
+	});
 </script>
 ```
