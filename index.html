@@ -16,3 +16,19 @@
 		console.log(key, value, index, length);
 	});
 </script>
+<script>
+	var c2 = new Mt.Collection({
+		key1: 'val1',
+		key2: 'val2',
+		key3: 'val3'
+	});
+	c2.each(function(key, value, index, length){
+		console.log(key, value, index, length);
+	});
+</script>
+<script>
+	var c3 = new Mt.Collection(['val1', 'val2', 'val3']);
+	c3.each(function(key, value, index, length){
+		console.log(key, value, index, length);
+	});
+</script>
